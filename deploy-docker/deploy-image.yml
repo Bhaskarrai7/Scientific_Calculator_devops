@@ -1,0 +1,11 @@
+---
+- name: Pull docker image of calculatorrr
+  hosts: all
+  tasks:
+    - name: Pull calculatorr devops image
+    docker_image:
+        name: rai07/calculatorrr
+        source: pull
+
+
+
