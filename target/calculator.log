@@ -1,0 +1,3 @@
+16/Mar/2021:12:31:38 614 [Calculator.java] [INFO] Calculator [Factorial] -> 2.6 = NaN
+16/Mar/2021:12:52:33 573 [Calculator.java] [INFO] Calculator [power of] - >2.0^2.4
+16/Mar/2021:12:52:33 575 [Calculator.java] [INFO] Calculator [RESULT - powerofnum] -> 5.278031643091577

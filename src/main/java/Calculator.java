@@ -17,7 +17,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
         do {
-            System.out.println("Calculator-DevOps, Choose to perform operation");
+            System.out.println("Scientific_Calculator-DevOps, \nChoose to perform operation\n");
             System.out.print("Press 1 to Factorial\nPress 2 to Square root\nPress 3 to Natural log\nPress 4 to power\n" +
                     "Press any other key to exit\nEnter your choice: ");
             int choice;
@@ -66,38 +66,39 @@ public class Calculator {
     public double Factorial(double number1) {
         double result = 1;
         int i;
-        // logger.info("[Factorial] - " + number1 + " = ");
-        if (number1 < 0)
+        
+        if (number1 < 0 || (number1!= (int)number1))
             result = Double.NaN;
         else
             for (i = 1; i <= number1; i++) {
                 result = result * i;
             }
+        logger.info("[Factorial] -> " + number1 + " = "+ result);
         return result;
     }
 
 
     public double squareroot(double number1) {
-        logger.info("[square root] - " + number1);
+        logger.info("[square root] -> " + number1);
         double result = 0;
         result = Math.sqrt(number1);
-        //logger.info("[RESULT - squareroot] - " + result);
+        logger.info("[RESULT - squareroot] -> " + result+ "   -" + result);
         return result;
     }
 
     public double naturallog(double number1) {
-        logger.info("[natural log] - " + number1);
+        logger.info("[natural log] -> " + number1);
         double result = 0;
         result = Math.log(number1);
-        logger.info("[RESULT - natural log] - " + result);
+        logger.info("[RESULT - natural log] ->" + result);
         return result;
     }
 
     public double powofnum(double number1,double number2) {
-        //logger.info("[power of] - " + number1);
+        logger.info("[power of] - >" + number1+ "^" + number2);
         double result = 0;
         result = Math.pow(number1,number2);
-        logger.info("[RESULT - powerofnum] - " + result);
+        logger.info("[RESULT - powerofnum] -> " + result);
         return result;
     }
 
